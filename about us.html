@@ -1,0 +1,79 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="about us.css">
+</head>
+<body>
+    <div class="card">
+        <svg 
+             viewBox="0 0 100% 100%"
+             xmlns='http://www.w3.org/2000/svg'
+             class="noise"
+             >
+          <filter id='noiseFilter'>
+            <feTurbulence 
+                          type='fractalNoise' 
+                          baseFrequency='0.85' 
+                          numOctaves='6' 
+                          stitchTiles='stitch' />
+          </filter>
+      
+          <rect
+                width='100%'
+                height='100%'
+                preserveAspectRatio="xMidYMid meet"
+                filter='url(#noiseFilter)' />
+        </svg>
+        <div class="content">
+          <h1>About us</h1>
+          <p>Welcome to Younexit! This brand was created by Younes Ksassoua, an 18-year-old boy from Sale, Morocco.
+            Younexit has two YouTube channels. One is about Islam and the Holy Quran, and the other is for gaming, especially Minecraft.
+            Younexit also has a website that offers some services and a special app for stories.
+            Thank you for visiting Younexit. Feel free to explore our services and play our game.</p>
+        </div>
+      </div>
+      <div class="gradient-bg">
+        <svg 
+             viewBox="0 0 100vw 100vw"
+             xmlns='http://www.w3.org/2000/svg'
+             class="noiseBg"
+             >
+          <filter id='noiseFilterBg'>
+            <feTurbulence 
+                          type='fractalNoise'
+                          baseFrequency='0.6'
+                          stitchTiles='stitch' />
+          </filter>
+      
+          <rect
+                width='100%'
+                height='100%'
+                preserveAspectRatio="xMidYMid meet"
+                filter='url(#noiseFilterBg)' />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+          <div class="interactive"></div>
+        </div>
+      </div>
+    <script src="about us.js"></script>
+</body>
+</html>
