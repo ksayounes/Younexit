@@ -262,7 +262,3 @@ span {
 body {
   animation: fadeIn 1s ease-in-out forwards;
 }
-
-body.fade-out {
-  animation: fadeOut 1s ease-in-out forwards;
-}
